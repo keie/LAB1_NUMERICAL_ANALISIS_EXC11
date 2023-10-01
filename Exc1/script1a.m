@@ -1,6 +1,6 @@
-
+syms x;
 % function
-f = x^2 -10;
+f = exp(x)-3;
 
 
 

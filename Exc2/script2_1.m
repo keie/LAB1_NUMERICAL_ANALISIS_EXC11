@@ -9,7 +9,7 @@ tolerance = 10^-4;
 
 x0 = 1.5;
 
-max_iter = 10;
+max_iter = 100;
 
 [result,iterations] = newton_method(f,tolerance,x0,max_iter);
 disp("root :"+result)

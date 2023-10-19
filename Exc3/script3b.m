@@ -1,18 +1,15 @@
-% Definir la función
+% Define the function
 g = @(x) tanh(x);
-
-% Tolerancia, valores iniciales y número máximo de iteraciones
+% Tolerance and max values of iter
 tolerance = 1e-6;
 x0 = -1;
 x1 = 1;
 max_iter = 100;
-
-% Llamar al método de la secante
+% call secant method
 [result, iterations] = secant_method(g, tolerance, x0, x1, max_iter);
+disp("Method : Secant method")
 disp("Root: " + result);
 disp("Iterations: " + iterations)
-
-
 
 %In order to find the root of the function 
 %g(x)=tanh(x), it's crucial to set the initial parameters 

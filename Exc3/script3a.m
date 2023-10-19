@@ -1,17 +1,12 @@
 
 % function
 f = tanh(x);
-
-
-
 %tolerance
 tolerance = 10^-4;
-
-x0 = -1;
-
+x0 = -0.80;
 max_iter = 20;
-
 [result,iterations] = newton_method(f,tolerance,x0,max_iter);
+disp("method : Newton Method")
 disp("root :"+result)
 disp("iterations :"+iterations)
 
